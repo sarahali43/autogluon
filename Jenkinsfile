@@ -85,6 +85,10 @@ install_forecasting = """
     python3 -m pip install --upgrade -e forecasting/
 """
 
+install_autogluon = """
+    python3 -m pip install --upgrade -e autogluon/
+"""
+
 stage("Unit Test") {
   parallel 'common': {
     node('linux-cpu') {
